@@ -1,0 +1,58 @@
+[
+  {"id": 1,
+  "name" : "Diabetes",
+  "symptoms" : ["weightloss","weakness" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 2,
+  "name" : "Dengue",
+  "symptoms" : ["weightloss","hjdscbjkdbc" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 3,
+  "name" : "Typhoid",
+  "symptoms" : ["weightloss","" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 4,
+  "name" : "Malaria",
+  "symptoms" : ["weightloss","" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 5,
+  "name" : "Diarrheoa",
+  "symptoms" : ["weightloss","" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 6,
+  "name" : "Hypertension",
+  "symptoms" : ["weightloss","" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 7,
+  "name" : "sugar",
+  "symptoms" : ["bp","" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+},
+{"id": 8,
+  "name" : "bp",
+  "symptoms" : ["weightloss","" ],
+  "precautions" : "Avoid Sugar",
+  "medications" : "Insulin",
+  "image":""
+}
+]
