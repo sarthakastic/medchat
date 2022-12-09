@@ -1,5 +1,5 @@
 import { useTheme } from "next-themes";
-// import { SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 
 const Mode = () => {
@@ -23,17 +23,34 @@ const Mode = () => {
           role="button"
           onClick={() => setTheme("light")}
         >
-          c
+          <div className="w-10 h-10 rounded-full bg-gradient-to-b from-yellow-200 to-orange-400 flex justify-center items-center  ">
+            {" "}
+            <div className="h-7 w-7 rounded-full bg-white flex justify-center items-center  ">
+              {" "}
+              <Icon
+                className="h-full w-full p-0.5 "
+                icon="mingcute:sun-fill"
+              />{" "}
+            </div>{" "}
+          </div>
         </div>
       );
     } else {
       return (
         <div
-          className="w-10 h-10 text-gray-900 "
+          className="w-10 h-10 text-blue-900 "
           role="button"
           onClick={() => setTheme("dark")}
         >
-          d
+          <div className="w-10 h-10 rounded-full bg-gradient-to-b from-blue-800 to-blue-500 flex justify-center items-center  ">
+            {" "}
+            <div className="h-7 w-7 rounded-full bg-white ">
+              <Icon
+                className="h-full w-full p-0.5 "
+                icon="ph:moon-stars-fill"
+              />{" "}
+            </div>{" "}
+          </div>
         </div>
       );
     }
