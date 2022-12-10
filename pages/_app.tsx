@@ -16,9 +16,11 @@ function MyApp({ Component, pageProps }: Props) {
       <Head>
         <title>Medipedia</title>
       </Head>
-      <ThemeProvider enableSystem={true} attribute="class">
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <div className="bg-[#eaf4fa] dark:bg-[#202020] ">
+        <ThemeProvider enableSystem={true} attribute="class">
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </div>
     </>
   );
 }

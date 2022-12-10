@@ -57,12 +57,11 @@ const Mode = () => {
   };
 
   return (
-    <header className="h-15 shadow-sm dark:border-gray-700">
+    <div className="h-15 ">
       <div className="container  px-4 sm:px-6 py-4 flex justify-between items-center">
-        dfjdsjf
         {renderThemeChanger()}
       </div>
-    </header>
+    </div>
   );
 };
 

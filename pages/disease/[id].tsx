@@ -10,7 +10,10 @@ const id = () => {
   return (
     <>
       <Navbar />
-      <div>{data.map((i) => (id == i.id.toString() ? i.name : null))}</div>;
+      <div className="h-screen">
+        {data.map((i) => (id == i.id.toString() ? i.name : null))}
+      </div>
+      ;
     </>
   );
 };

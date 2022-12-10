@@ -6,7 +6,7 @@ const cards = () => {
 
   return (
     <>
-      <div>
+      <div className="h-screen">
         {data.map((i) => (
           <div onClick={() => router.push(`/disease/${i.id}`)}>
             <div>{i.id}</div>
