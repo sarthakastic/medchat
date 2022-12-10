@@ -9,6 +9,7 @@ const cards = () => {
       <div className="  min-h-[calc(100vh-64px)] flex flex-wrap justify-center items-center ">
         {data.map((i) => (
           <div
+            key={i.id}
             className=" hover:cursor-pointer flex flex-col justify-between w-96 p-2 h-96 rounded-2xl text-blue-400 dark:text-blue-600 bg-white dark:bg-slate-400 m-2 "
             onClick={() => router.push(`/disease/${i.id}`)}
           >

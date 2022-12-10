@@ -16,7 +16,7 @@ const Search = () => {
         placeholder="Search for Disease or Symptoms..."
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div className="mt-4 rounded-2xl max-h-56 overflow-y-scroll text-white bg-primary absolute md:w-[550px]  ">
+      <div className="mt-4  z-10 rounded-2xl max-h-56 overflow-y-scroll text-white bg-primary absolute md:w-[550px]  ">
         {search === ""
           ? null
           : data.map((i) =>
@@ -25,6 +25,7 @@ const Search = () => {
                 .toLocaleLowerCase()
                 .includes(search.toLocaleLowerCase()) ? (
                 <div
+                  key={i.id}
                   className=" px-4 h-full flex items-center hover:cursor-pointer "
                   onClick={() => (
                     router.push(`/disease/${i.id}`), setSearch("")

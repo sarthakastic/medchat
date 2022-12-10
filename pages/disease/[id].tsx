@@ -13,7 +13,7 @@ const id = () => {
       <div className="min-h-[calc(100vh-64px)]">
         {data.map((i) =>
           id == i.id.toString() ? (
-            <div className="p-4 text-blue-400 dark:text-blue-600  ">
+            <div key={i.id} className="p-4 text-blue-400 dark:text-blue-600  ">
               <img className="w-full h-96 " src={i.image} alt="" />
               <div className=" font-bold text-blue-500 dark:text-blue-600 mt-2  ">
                 {i.name}

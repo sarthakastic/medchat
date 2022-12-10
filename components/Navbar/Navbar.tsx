@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
+import Maps from "../../pages/Maps";
 import Mode from "../Navbar/mode/Mode";
 import Search from "./search/Search";
 export const Navbar = () => {
@@ -20,6 +21,7 @@ export const Navbar = () => {
       <div className=" ">
         <Mode />
       </div>
+      <div onClick={() => router.push("/Maps")}>Maps</div>
     </div>
   );
 };
