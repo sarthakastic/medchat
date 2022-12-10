@@ -4,7 +4,7 @@ import Cards from "../components/Cards/cards";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Cards />
     </>
   );

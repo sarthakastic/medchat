@@ -16,7 +16,7 @@ const Search = () => {
         placeholder="Search for Disease or Symptoms..."
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div className="mt-4 absolute w-[550px]  ">
+      <div className="mt-4 rounded-2xl max-h-56 overflow-y-scroll text-white bg-primary absolute md:w-[550px]  ">
         {search === ""
           ? null
           : data.map((i) =>
@@ -25,14 +25,14 @@ const Search = () => {
                 .toLocaleLowerCase()
                 .includes(search.toLocaleLowerCase()) ? (
                 <div
-                  className="bg-red-500  h-full  dark:bg-purple-500 "
+                  className=" px-4 h-full flex items-center hover:cursor-pointer "
                   onClick={() => (
                     router.push(`/disease/${i.id}`), setSearch("")
                   )}
                 >
                   {}
-                  <div>{i.name}</div>
-                  <div> {i.id}</div>
+                  <img className="h-8 my-2 w-14" src={i.image} alt="" />
+                  <div className="ml-4">{i.name}</div>
                 </div>
               ) : null
             )}

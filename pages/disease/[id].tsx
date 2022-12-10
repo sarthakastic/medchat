@@ -9,11 +9,34 @@ const id = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="h-screen">
-        {data.map((i) => (id == i.id.toString() ? i.name : null))}
+      {/* <Navbar /> */}
+      <div className="min-h-[calc(100vh-64px)]">
+        {data.map((i) =>
+          id == i.id.toString() ? (
+            <div className="p-4 text-blue-400 dark:text-blue-600  ">
+              <img className="w-full h-96 " src={i.image} alt="" />
+              <div className=" font-bold text-blue-500 dark:text-blue-600 mt-2  ">
+                {i.name}
+              </div>
+              <div>
+                {" "}
+                <span className="font-semibold">Symptoms :</span>{" "}
+                {i.symptoms.toString()}
+              </div>
+              <div>
+                {" "}
+                <span className="font-semibold">Precautions :</span>{" "}
+                {i.precautions}{" "}
+              </div>
+              <div>
+                {" "}
+                <span className="font-semibold">Medications :</span>{" "}
+                {i.medications}
+              </div>
+            </div>
+          ) : null
+        )}
       </div>
-      ;
     </>
   );
 };

@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import React, { ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
+import { Navbar } from "../components/Navbar/Navbar";
 
 interface Props {
   children?: ReactNode;
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }: Props) {
       </Head>
       <div className="bg-[#eaf4fa] dark:bg-[#202020] ">
         <ThemeProvider enableSystem={true} attribute="class">
+          <Navbar />
           <Component {...pageProps} />
         </ThemeProvider>
       </div>
