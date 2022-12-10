@@ -10,7 +10,7 @@ export const Navbar = () => {
       <div>
         <img
           src="/logo.png"
-          className="w-28"
+          className="w-28 hover:cursor-pointer "
           onClick={() => router.push("/")}
         />
       </div>

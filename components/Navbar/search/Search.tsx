@@ -10,7 +10,7 @@ const Search = () => {
   return (
     <>
       <input
-        className="border h-10 w-[550px]  px-2  "
+        className="border h-10 text-xs md:w-[550px]  px-2  "
         type="text"
         value={search}
         placeholder="Search for Disease or Symptoms..."
