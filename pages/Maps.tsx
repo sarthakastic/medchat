@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
+import { useJsApiLoader, GoogleMap, Marker } from "@react-google-maps/api";
 
 const Maps = () => {
   const [map, setMap] = React.useState(null);
@@ -54,7 +54,7 @@ const Maps = () => {
             // onUnmount={onUnmount}
           >
             {/* Child components, such as markers, info windows, etc. */}
-            <></>
+            <Marker position={center} />
           </GoogleMap>
         ) : (
           <div>
